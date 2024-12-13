@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'Pragmatica';
+    src: local('PragmaticaCond-Medium'),
+         url('../fonts/PragmaticaCond-Medium.woff2') format('woff2'),
+         url('../fonts/PragmaticaCond-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  text-decoration: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    min-width: 320px;
+    font-family: 'Pragmatica', sans-serif;
+    font-weight: 500;
+    background-color: #FFF;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*header*/
+
+.header__container {
+    color: #FFF;
+    background-color: #000;
+    max-width: 1280px;                     /*Ширина контейнера*/
+    margin: 0 auto;                        /* Центрируем контейнер */
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;                     /* Не переносить элементы на следующую строку */
+    overflow: hidden;                      /* Скрывает избыточный контент, который не помещается */
+    white-space: nowrap;                   /* Отключает перенос текста внутри списка */
+}
+
+.header__link span {
+    display: inline-block;
+    margin-right: 107px;                   /* Добавление отступа между словами */
+    width: 600px;                          /* Ширина текста */
+    font-size: 187.31px;
+    font-weight: 500;
+    height: 202.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(200%); }    /* Начальная позиция за пределами видимой области справа */
+    100% { transform: translateX(-380%); } /* Текст уходит за пределы видимой области слева и анимация прерывается */
+}
+
+/*hero*/
+
+.hero__container {
+    background-color: #000;
+}
+
+.hero__block {
+    display: flex;
+    gap: 163px;
+    max-width: 1260px;
+    overflow: hidden;                       /* Скрывает части, выходящие за пределы */
+}
+
+.hero__three {
+    animation: moveEffect 2.3s infinite alternate;
+}
+
+/*section__three*/
+
+.section__three {
+    margin: 0 auto;
+    max-width: 1280px;
+    background-color: #000;
+}
+
+/*section__four*/
+
+.section__four {
+    background-color: #000;
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: 390px;
+}
+
+.section__block-one {
+    margin-right: 175px;                     /* Отступ справа */
+}
+
+/*section__five*/
+
+.section__five {
+    background-color: #000;
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: 390px;
+}
+
+.section__text {
+    padding-left: 30px;
+    margin: 0;
+    max-width: 776px;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 39.03px;
+    transform: translateY(74px);
+}
+
+.section__one {
+    position: relative;
+}
+
+/* Перемещение влево до полной скрытости при наведении */
+.section__one:hover .section__cube {
+    transform: translateX(-1000px);            /* Уезжает за границы видимости */
+}
+
+.section__two {
+    transform: translateY(-17px);
+}
+
+.section__cube {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    transition: transform 2.3s;                /* Плавное перемещение */
+}
+
+.section__items {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+    overflow: hidden;                          /* Скрытие элементов за пределами области видимости */
+}
+
+/*section__six*/
+
+.section__six {
+    background-color: #000;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*section__seven*/
+
+.section__seven {
+    background-color: #000;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.section__turntable {
+    justify-content: center;                  /* Центрирование по горизонтали */
+    display: flex;                            /* Включение flexbox */
+    align-items: center;                      /* Центрирование по вертикали */
+}
+
+/*section__eight*/
+
+.section__eight {
+    background-color: #000;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/*footer*/
+
+.footer {
+    background-color: #000;
+    max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;                         /* Добавляем свойство overflow: hidden для блока .footer, чтобы скрыть любое содержимое, выходящее за его пределы */
+}
+
+.footer__container {
+    width: 100%;                              /* Устанавливаем ширину на 100% чтобы использовать всю доступную ширину контейнера */
+}
+
+.footer__text {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-size: 187.31px;
+    font-weight: 500;
+    line-height: 243.69px;
+    height: auto;                               /* Убираем фиксированную высоту */
+    width: 2000px;                              /* Установка максимальной ширины для текста, чтобы он использовал доступную ширину родительского контейнера */
+    overflow: hidden;                           /* Скрывает любые выскакивающие элементы */
+    white-space: nowrap;                        /* Предотвращает перенос текста */
+    animation: new-marquee 15s linear infinite; /* Добавляем анимацию к тексту */
+}
+
+@keyframes new-marquee {
+    0% { transform: translateX(100%); }         /* Начальная позиция за пределами видимой области справа */
+    100% { transform: translateX(-100%); }      /* Текст уходит за пределы видимой области слева и анимация прерывается */
+}
+
+
+

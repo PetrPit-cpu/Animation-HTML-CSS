@@ -39,18 +39,15 @@ body {
 }
 
 .container {
-    max-width: 1280px;
-    width: 100%;
     margin: 0 auto;
+    width: 1280px;
+    background-color: #000;
 }
 
 /*header*/
 
 .header__container {
     color: #FFF;
-    background-color: #000;
-    max-width: 1280px;                     /*Ширина контейнера*/
-    margin: 0 auto;                        /* Центрируем контейнер */
 }
 
 .header__list {
@@ -79,10 +76,6 @@ body {
 }
 
 /*hero*/
-
-.hero__container {
-    background-color: #000;
-}
 
 .hero__block {
     display: flex;
@@ -126,14 +119,16 @@ body {
 }
 
 .section__text {
-    padding-left: 30px;
+    padding-left: 49px;
     margin: 0;
-    max-width: 776px;
+    max-width: 790px;
+    min-height: 265px;
     color: #FFF;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 39.03px;
-    transform: translateY(74px);
+    font-size: 32px;
+    line-height: 41.63px;
+    letter-spacing: 2.78px;
+    transform: translateY(87px);
 }
 
 .section__one {
@@ -151,7 +146,7 @@ body {
 
 .section__cube {
     position: absolute;
-    top: 0;
+    top: 33px;
     left: 70px;
     transition: transform 2.3s;                /* Плавное перемещение */
 }
@@ -196,14 +191,9 @@ body {
 /*footer*/
 
 .footer {
-    background-color: #000;
-    max-width: 1280px;
-    margin: 0 auto;
+    /*margin: 0 auto;
+    width: 1280px;*/
     overflow: hidden;                         /* Добавляем свойство overflow: hidden для блока .footer, чтобы скрыть любое содержимое, выходящее за его пределы */
-}
-
-.footer__container {
-    width: 100%;                              /* Устанавливаем ширину на 100% чтобы использовать всю доступную ширину контейнера */
 }
 
 .footer__text {

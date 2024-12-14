@@ -1,0 +1,15 @@
+.section__turnable-svg {
+    animation: spin 6s infinite linear;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.section__turntable {
+    overflow: hidden; /* Скрывает переполнение и убирает скроллинг */
+    width: 1280px; /* Ширина контейнера равна ширине SVG */
+    height: 1192px; /* Высота контейнера равна высоте SVG */
+}

@@ -1,7 +1,7 @@
 /*объект №2 Анимация*/
 
 .color-yellow-red {
-    animation: yellowToRed 2.3s infinite alternate;
+    animation: yellowToRed 1s infinite alternate;
 }
 
 @keyframes yellowToRed {
@@ -14,7 +14,7 @@
 }
 
 .color-blue-black {
-    animation: blueToBlack 2.3s infinite alternate;
+    animation: blueToBlack 1s infinite alternate;
 }
 
 @keyframes blueToBlack {
@@ -27,7 +27,7 @@
 }
 
 .color-red-yellow {
-    animation: redToYellow 2.3s infinite alternate;
+    animation: redToYellow 1s infinite alternate;
 }
 
 @keyframes redToYellow {
@@ -40,7 +40,7 @@
 }
 
 .color-black-blue {
-    animation: blackToBlue 2.3s infinite alternate;
+    animation: blackToBlue 1s infinite alternate;
 }
 
 @keyframes blackToBlue {

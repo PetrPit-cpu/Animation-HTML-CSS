@@ -1,7 +1,7 @@
 /*объект №1 Анимация*/
 
 .color-black {
-    animation: changeBlackToOrange 2.3s infinite alternate;
+    animation: changeBlackToOrange 1s infinite alternate;
 }
 
 @keyframes changeBlackToOrange {
@@ -17,7 +17,7 @@
 }
 
 .color-orange-to-black {
-    animation: changeOrangeToBlack 2.3s infinite alternate;
+    animation: changeOrangeToBlack 1s infinite alternate;
 }
 
 @keyframes changeOrangeToBlack {
@@ -33,11 +33,11 @@
 }
 
 .color-change1 {
-    animation: changeColor1 2.3s infinite alternate;
+    animation: changeColor1 1s infinite alternate;
 }
 
 .color-change2 {
-    animation: changeColor2 2.3s infinite alternate;
+    animation: changeColor2 1s infinite alternate;
 }
 
 @keyframes changeColor1 {

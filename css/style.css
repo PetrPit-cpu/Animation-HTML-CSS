@@ -208,7 +208,7 @@ body {
     color: #FFF;
     font-weight: 500;
     font-size: 187.31px;
-    line-height: 243.69px;
+    line-height: 210px;
     padding-right: 50px;         /* Отступ между словами */
 }
 
@@ -219,6 +219,29 @@ body {
       to {
         transform: translateX(calc(-50%));
       }
+}
+
+.market {
+    display: inline-block;
+    animation: slide 12s linear infinite; /* Анимация бегущей строки */
+    will-change: transform;
+}
+
+.market span {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 130px;
+    line-height: 150px;
+    padding-right: 20px;         /* Отступ между словами */
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(calc(-50%));
+    }
+    to {
+        transform: translateX(0);
+    }
 }
 
 

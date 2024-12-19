@@ -25,7 +25,8 @@ body {
     min-width: 320px;
     font-family: 'Pragmatica', sans-serif;
     font-weight: 500;
-    background-color: #FFF;
+    background-color: #000000;
+    overflow-x: hidden;
 }
 
 .list-reset {
@@ -40,7 +41,7 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 1280px;
+    width: 1920px;
     background-color: #000;
 }
 
@@ -52,16 +53,18 @@ body {
 }
 
 .header__link {
+    margin: 0;
     display: flex;
 }
 
 .header__link span {
     display: inline-block;
-    margin-right: 107px;                   /* Отступ между словами */
-    width: 600px;                          /* Ширина текста */
-    font-size: 187.31px;
+    margin-right: 138px;                   /* Отступ между словами */
+    width: 1038px;                          /* Ширина текста */
+    font-size: 273.19px;
     font-weight: 500;
-    height: 202.3px;
+    line-height: 287.42px;
+    height: 261px;
     white-space: nowrap;
     overflow: hidden;
     animation: marquee 2s linear infinite;
@@ -72,7 +75,7 @@ body {
         transform: translateX(0);
       }
       to {
-        transform: translateX(calc(-100% - 107px));
+        transform: translateX(calc(-100% - 138px));
       }
 }
 
@@ -81,8 +84,23 @@ body {
 .hero__block {
     display: flex;
     /*gap: 163px;*/
-    max-width: 1260px;
+    max-width: 1920px;
     overflow: hidden;                       /* Скрывает части, выходящие за пределы */
+}
+
+.hero__element1 {
+    width: 499px;
+    height: 536px;
+}
+
+.hero__element2 {
+    width: 555.7px;
+    height: 573.7px;
+}
+
+.hero__element3 {
+    width: 1100px;
+    height: 536.7px;
 }
 
 .hero__three {
@@ -92,9 +110,15 @@ body {
 /*section__three*/
 
 .section__three {
+    display: block;
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1920px;
     background-color: #000;
+}
+
+.section__element-one {
+    width: 1936px;
+    height: 1785px;
 }
 
 /*section__four*/
@@ -102,12 +126,27 @@ body {
 .section__four {
     background-color: #000;
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 1920px;
     min-height: 390px;
 }
 
 .section__block-one {
-    margin-right: 175px;                     /* Отступ справа */
+    margin-right: 223px;                     /* Отступ справа */
+}
+
+.section__element-two {
+    width: 537px;
+    height: 537px;
+}
+
+.section__element-three {
+    width: 537px;
+    height: 537px;
+}
+
+.section__element-four {
+    width: 537px;
+    height: 537px;
 }
 
 /*section__five*/
@@ -115,21 +154,27 @@ body {
 .section__five {
     background-color: #000;
     margin: 0 auto;
-    max-width: 1280px;
-    min-height: 390px;
+    max-width: 1920px;
+    min-height: 511px;
+    margin-bottom: 42px;
 }
 
 .section__text {
     padding-left: 49px;
     margin: 0;
-    max-width: 790px;
-    min-height: 265px;
+    max-width: 1132px;
+    min-height: 315px;
     color: #FFF;
     font-weight: 500;
-    font-size: 32px;
-    line-height: 41.63px;
+    font-size: 43px;
+    line-height: 57px;
     letter-spacing: 2.78px;
-    transform: translateY(87px);
+    transform: translateY(132px);
+}
+
+.section__cube {
+    width: 1016px;
+    height: 511px;
 }
 
 .section__one {
@@ -138,40 +183,51 @@ body {
 
 /* Перемещение влево до полной скрытости при наведении */
 .section__one:hover .section__cube {
-    transform: translateX(-1000px);            /* Уезжает за границы видимости */
+    transform: translateX(-1111px);            /* Уезжает за границы видимости */
 }
 
 .section__two {
-    transform: translateY(-17px);
+    transform: translateY(100px);
 }
 
 .section__cube {
     position: absolute;
     top: 33px;
-    left: 70px;
+    left: 96px;
     transition: transform 2.3s;                /* Плавное перемещение */
 }
 
 .section__items {
+    min-height: 543px;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
     overflow: hidden;                          /* Скрытие элементов за пределами области видимости */
+}
+
+.section__mask {
+    width: 540px;
+    height: 540px;
 }
 
 /*section__six*/
 
 .section__six {
+    display: block;
     background-color: #000;
-    max-width: 1280px;
-    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.section__svg-one {
+    width: 1920px;
+    height: 575px;
 }
 
 /*section__seven*/
 
 .section__seven {
     background-color: #000;
-    max-width: 1280px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -181,19 +237,29 @@ body {
     align-items: center;                      /* Центрирование по вертикали */
 }
 
+.section__svg {
+    width: 1657px;
+    height: 1720px;
+}
+
 /*section__eight*/
 
 .section__eight {
     background-color: #000;
-    max-width: 1280px;
+    max-width: 1920px;
     margin: 0 auto;
+}
+
+.section__svg-two{
+    width: 1920px;
+    height: 575px;
 }
 
 /*footer*/
 
 .footer__container {
     position: relative;
-    width: 1280px;            /* Ширина контейнера */
+    width: 1920px;            /* Ширина контейнера */
     overflow: hidden;         /* Скрыть всё, что выходит за пределы контейнера */
     white-space: nowrap;      /* Запретить перенос строк */
 }
@@ -207,7 +273,7 @@ body {
 .marquee span {
     color: #FFF;
     font-weight: 500;
-    font-size: 187.31px;
+    font-size: 273.19px;
     line-height: 210px;
     padding-right: 50px;         /* Отступ между словами */
 }
@@ -230,8 +296,8 @@ body {
 .market span {
     color: #FFF;
     font-weight: 500;
-    font-size: 130px;
-    line-height: 150px;
+    font-size: 140px;
+    line-height: 182px;
     padding-right: 20px;         /* Отступ между словами */
 }
 

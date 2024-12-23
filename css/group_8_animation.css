@@ -38,3 +38,16 @@
 .fadeAnimation {
     animation: fadeColorChange 2.3s infinite alternate; /* Применение анимации */
 }
+
+@keyframes redColor {
+    0% {
+        fill: #6A2129; /* Начальный цвет */
+    }
+    100% {
+        fill: #BF0015; /* Конечный цвет */
+    }
+}
+
+.redAnimation {
+    animation: redColor 2.3s infinite alternate; /* Применение анимации */
+}

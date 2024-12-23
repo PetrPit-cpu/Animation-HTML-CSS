@@ -1,14 +1,4 @@
 
-.section__turntable {
-    display: block;
-    margin: 0 auto;
-    overflow: hidden;                       /* Скрывает переполнение и убирает скроллинг */                        /* Высота контейнера равна высоте SVG */
-}
-
-.section__svg {
-    display: block;
-    margin: 0 auto;
-}
 
 .live {
     transform-origin: center; /* Устанавливаем точку вращения по центру элемента */

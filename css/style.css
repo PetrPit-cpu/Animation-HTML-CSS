@@ -41,33 +41,38 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 1920px;
+    max-width: 1920px;
+    width: 100%;
     background-color: #000;
 }
 
 /*header*/
 
+.header {
+    width: 100%;
+    min-height: 355px;
+}
+
 .header__container {
-    color: #FFF;
-    overflow: hidden;                      /* Добавляем overflow: hidden, чтобы скрыть скролл */
+    position: relative;
+    max-width: 1920px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;                     /* Добавляем overflow: hidden, чтобы скрыть скролл */
 }
 
 .header__link {
-    margin: 0;
-    display: flex;
+    display: inline-block;
+    animation: marquee 5s linear infinite;
+    will-change: transform;
 }
 
 .header__link span {
-    display: inline-block;
-    margin-right: 138px;                   /* Отступ между словами */
-    width: 1038px;                          /* Ширина текста */
-    font-size: 273.19px;
+    color: #FFF;
     font-weight: 500;
+    font-size: 273.19px;
     line-height: 287.42px;
-    height: 261px;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: marquee 2s linear infinite;
+    padding-right: 138px;                   /* Отступ между словами */                         /* Ширина текста */
 }
 
 @keyframes marquee {
@@ -75,7 +80,7 @@ body {
         transform: translateX(0);
       }
       to {
-        transform: translateX(calc(-100% - 138px));
+        transform: translateX(calc(-50%));
       }
 }
 
@@ -88,19 +93,23 @@ body {
     overflow: hidden;                       /* Скрывает части, выходящие за пределы */
 }
 
+.hero__two {
+    margin-right: auto
+}
+
 .hero__element1 {
-    width: 499px;
-    height: 536px;
+    width: 556px;
+    height: 556px;
 }
 
 .hero__element2 {
-    width: 555.7px;
-    height: 573.7px;
+    width: 556px;
+    height: 556px;
 }
 
 .hero__element3 {
-    width: 1100px;
-    height: 536.7px;
+    width: 556px;
+    height: 556px;
 }
 
 .hero__three {
@@ -117,11 +126,22 @@ body {
 }
 
 .section__element-one {
-    width: 1936px;
+    width: 1895px;
     height: 1785px;
 }
 
 /*section__four*/
+
+/*.hero__four {
+    display: flex;
+    flex-direction: column; /* Вертикальное размещение по умолчанию */
+/*}*/
+
+.energy {
+    display: flex; /* Flexbox для energy */
+    /*justify-content: space-between; /* Горизонтальное распределение элементов */
+    /*margin-top: 20px; /* Отступ сверху */
+}
 
 .section__four {
     background-color: #000;
@@ -131,7 +151,7 @@ body {
 }
 
 .section__block-one {
-    margin-right: 223px;                     /* Отступ справа */
+    margin-right: auto;                     /* Отступ справа */
 }
 
 .section__element-two {
@@ -187,7 +207,7 @@ body {
 }
 
 .section__two {
-    transform: translateY(100px);
+    transform: translateY(0px);
 }
 
 .section__cube {
@@ -201,26 +221,33 @@ body {
     min-height: 543px;
     flex-wrap: nowrap;
     justify-content: space-between;
-    gap: 30px;
+    gap: 44px;
     overflow: hidden;                          /* Скрытие элементов за пределами области видимости */
 }
 
 .section__mask {
     width: 540px;
     height: 540px;
+    position: relative;
+    overflow: hidden; /* Скрывает всё, что выходит за пределы этого элемента */
 }
+
+/*.section__mask {
+    height: 425px; /* Убедитесь, что высота предназначена для анимации */
+/*}
 
 /*section__six*/
 
 .section__six {
     display: block;
     background-color: #000;
-    max-width: 1920px;
+    width: 100%;
+    height: auto;
 }
 
 .section__svg-one {
-    width: 1920px;
-    height: 575px;
+    width: 100%;
+    height: auto;
 }
 
 /*section__seven*/
@@ -234,32 +261,35 @@ body {
 .section__turntable {
     justify-content: center;                  /* Центрирование по горизонтали */
     display: flex;                            /* Включение flexbox */
-    align-items: center;                      /* Центрирование по вертикали */
+    align-items: center;
+    overflow: hidden;                    /* Центрирование по вертикали */
 }
 
 .section__svg {
-    width: 1657px;
-    height: 1720px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*section__eight*/
 
 .section__eight {
     background-color: #000;
-    max-width: 1920px;
+    width: 100%;
+    height: auto;
     margin: 0 auto;
 }
 
 .section__svg-two{
-    width: 1920px;
-    height: 575px;
+    width: 100%;
+    height: auto;
 }
 
 /*footer*/
 
 .footer__container {
     position: relative;
-    width: 1920px;            /* Ширина контейнера */
+    max-width: 1920px;            /* Ширина контейнера */
     overflow: hidden;         /* Скрыть всё, что выходит за пределы контейнера */
     white-space: nowrap;      /* Запретить перенос строк */
 }
